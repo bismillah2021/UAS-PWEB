@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    div.gallery {
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    div.gallery:hover {
+        border: 1px solid #777;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px){
+        .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+        }
+    }
+
+    @media only screen and (max-width: 500px){
+        .responsive {
+            width: 100%;
+        }
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    h1{
+        font-weight: bold;
+        margin-top: 10px;
+      }
+</style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Jumbotron -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>UAS</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand font-weight-bold text-white" href="#page-top">UAS PEMROGRAMAN WEB</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#home" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                HOME
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="biodata.html">Biodata</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="galeri.html">Galeri</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger text-white" href="cek.html">CEK BILANGAN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger text-white" href="stok.php">STOK BARANG</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    </nav>
+
+    <br><br><br>
+    <h1 align="center">MY GALERI</h1>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_fjords.jpg">
+          <img src="img/hero.jpg"  width="600" height="400">
+        </a>
+      </div></div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="img/bg.jpg"  width="600" height="400">
+        </a>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="img/impostor.jpg"  width="600" height="400">
+        </a>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+          <img src="img/komputer.jpg"  width="600" height="400">
+        </a>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+</body>
+</html>
